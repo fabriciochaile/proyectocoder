@@ -2,16 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ul{
     list-style: none;
+    height: 100%;
 }
 
 h1{
     font-size: 2rem;
 }
 
+input{
+    border-radius: 3px;
+    height: 25px;
+}
+
+
+
 //varialbes
 
 $colorprincipal: #0078d4;
+
+@media (min-width: 1024px){
+    ul li a:hover{
+        color:black;
+        transition-duration: 0.8s;
+    }
+
+}

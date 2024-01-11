@@ -1,0 +1,61 @@
+.titulo-contactar{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px;
+}
+
+form{
+    height: 100vh;
+    border: solid;
+    border-radius: 8px;
+    border-color: black;
+    text-align: center;
+}
+
+.img-formulario {
+    width: 100%
+}
+
+.div-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.textarea{
+    height: 45%;
+}
+
+//desktop//
+
+@media (min-width: 530px) {
+    form {
+        display: flex;
+        margin: 15px 40px;
+        height: 400px;
+    }
+
+    .img-formulario{
+        width: 40%;
+        border:outset;
+        border-color: black;
+        border-radius: 8px;
+    }
+
+    .div-formulario{
+        text-align: center;
+        width: 73%;
+    }
+
+    input{
+        height: 30px;
+    }
+}

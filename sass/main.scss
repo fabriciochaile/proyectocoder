@@ -1,8 +1,9 @@
 @import "./base";
 
 //componentes
-
-
+@import "./components/header";
+@import "./components/botones";
+@import "./components/footer";
 //carpeta pages
 
 @import "./pages/index";

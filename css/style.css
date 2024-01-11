@@ -2,14 +2,370 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
   list-style: none;
+  height: 100%;
 }
 
 h1 {
   font-size: 2rem;
+}
+
+input {
+  border-radius: 3px;
+  height: 25px;
+}
+
+@media (min-width: 1024px) {
+  ul li a:hover {
+    color: black;
+    transition-duration: 0.8s;
+  }
+}
+header {
+  height: 100vh;
+  background-color: #0078d4;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+a img {
+  border-radius: 110px;
+  height: 115px;
+  width: 117px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    height: 53px;
+  }
+  .nav {
+    flex-direction: row;
+  }
+  header nav .ul {
+    flex-direction: row;
+    align-items: end;
+    width: 50%;
+  }
+  nav .div {
+    width: 50%;
+  }
+  a .img {
+    width: 47px;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 80px;
+  }
+  header nav ul li a {
+    font-size: 1.3rem;
+  }
+}
+.boton {
+  text-decoration: none;
+  color: white;
+  background-color: #0078d4;
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #0078d4;
+  margin-top: 100px;
+  height: 130px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.icono {
+  width: 35px;
+  height: 35px;
+  margin: 15px;
+}
+
+.titulo-empresa {
+  font-size: 1.5rem;
+  color: #0078d4;
+}
+
+.imagen-portada-celular {
+  width: 100%;
+}
+
+.parrafo-portada-empresa {
+  font-size: 1.2rem;
+}
+
+.portada-empresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 150px;
+  text-align: center;
+  row-gap: 7px;
+  margin-top: 50px;
+}
+
+.parrafo-empresa {
+  background-color: #0078d4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 60px 0;
+}
+
+.parrafo-portada-empresa-2 {
+  font-size: 1.2rem;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.div-empresa2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .div-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .imagen-portada-celular {
+    width: 50%;
+  }
+  .parrafo-portada-empresa {
+    padding: 21px;
+  }
+  .parrafo-empresa {
+    margin: 0;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+  .imagen-portada-tablet {
+    width: 180px;
+    height: 130px;
+  }
+  .parrafo-portada-empresa-2 {
+    width: 50%;
+  }
+  .div-empresa2 {
+    padding-top: 40px;
+  }
+}
+.titulo-contactar {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px;
+}
+
+form {
+  height: 100vh;
+  border: solid;
+  border-radius: 8px;
+  border-color: black;
+  text-align: center;
+}
+
+.img-formulario {
+  width: 100%;
+}
+
+.div-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.textarea {
+  height: 45%;
+}
+
+@media (min-width: 530px) {
+  form {
+    display: flex;
+    margin: 15px 40px;
+    height: 400px;
+  }
+  .img-formulario {
+    width: 40%;
+    border: outset;
+    border-color: black;
+    border-radius: 8px;
+  }
+  .div-formulario {
+    text-align: center;
+    width: 73%;
+  }
+  input {
+    height: 30px;
+  }
+}
+.titulo-preguntas {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #0078d4;
+  margin-top: 10px;
+}
+
+.subtitulo-preguntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078d4;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.div-preguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.imagen-preguntas {
+  width: 200px;
+  height: 180px;
+}
+
+.div-preguntas p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.div-img-preguntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .div-preguntas {
+    flex-direction: row;
+  }
+  .div-preguntas:hover {
+    height: 170px;
+    transition-duration: 1.5s;
+  }
+  .div-preguntas p {
+    width: 50%;
+  }
+  .subtitulo-preguntas {
+    border-radius: 5px;
+  }
+}
+.portada-rrhh {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.titulo-rrhh {
+  font-size: 1.5rem;
+  color: #0078d4;
+}
+
+.subtitulo-rrhh {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.imagen-rrhh {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.parrafo-rrhh {
+  background-color: #0078d4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.link-olavarria {
+  color: white;
+}
+
+.cv-rrhh {
+  background-color: black;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-rrhh {
+  margin: 0;
+}
+
+@media (min-width: 530px) {
+  .portada-rrhh {
+    display: flex;
+    align-items: center;
+  }
+  .imagen-rrhh {
+    height: 20%;
+    width: 30%;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .div-rrhh {
+    padding: 10px;
+  }
+  .link-olavarria {
+    color: black;
+  }
+  .link-olavarria:hover {
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
